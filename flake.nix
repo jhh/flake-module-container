@@ -44,6 +44,7 @@
             networking.useDHCP = false;
             networking.firewall.enable = false;
             j3ff.hello.enable = true;
+            system.stateVersion = "23.05";
           })
         ];
       };

@@ -21,9 +21,7 @@
 
           config = lib.mkIf cfg.enable {
             systemd.services.hello = {
-              description = "Hello service";
               wantedBy = [ "multi-user.target" ];
-
               serviceConfig =
                 let
                   pkg = self.packages.${system}.default.dependencyEnv;
